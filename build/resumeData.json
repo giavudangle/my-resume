@@ -1,0 +1,181 @@
+{
+  "main": {
+    "name":"Vu Dang",
+    "occupation":"Software Engineer",
+    "description":"Never lose a holy curiosity ...",
+    "image":"profilepic.jpg",
+    "bio":"Experienced Full Stack Engineer with a demonstrated history of working in the computer software industry.Skilled in C++, C#, ReactJS, Angular, React Native, JavaScript, Redux, ContextAPI, NodeJS, Express, MongoDB, SQl Server, IOS, Swift, Python, Deep Learning, Natural Language Processing,Computer Vision. ",
+    "contactmessage":"Contact with me ",
+    "email": "danglegiavu@gmail.com",
+    "phone": "0967781273",
+    "address":{
+      "street":"67 Huynh Thien Loc",
+      "city":"Ho Chi Minh",
+      "state":"City",
+      "zip": "27017"
+    },
+    "website": "github.com/giavudangle",
+    "resumedownload":"github.com/giavudangle",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"http://facebook.com/giavudangle",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"twitter",
+        "url":"http://twitter.com",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"google-plus",
+        "url":"http://googleplus.com",
+        "className":"fa fa-google-plus"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/giavudangle/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"http://instagram.com/vudang___",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"http://github.com/giavudangle",
+        "className":"fa fa-github"
+      },
+      {
+        "name":"skype",
+        "url":"http://skype.com",
+        "className":"fa fa-skype"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Tech Stack ",
+    "education":[
+      {
+        "school":"Ho Chi Minh City University of Foreign Languages and Information Technology",
+        "degree":"Bachelor of Information Technology",
+        "graduated":"Sep 2018 - Present",
+        "description":""
+      }
+    ],
+    "work":[
+      {
+        "company":"STDIO Solutions",
+        "title":"Software Engineer",
+        "years":"Sep 2018 - Mar 2019",
+        "description":"Developed Backend to control production education of company"
+      },
+      {
+        "company":"KMS Technology",
+        "title":"Software Engineer",
+        "years":"Mar 2019 - Sep 2019",
+        "description":"Developed Mobile Application for Outsourcing & Software Product of company"
+      },
+      {
+        "company":"Food Meaning",
+        "title":"Software Engineer",
+        "years":"Sep 2019 - Jan 2020",
+        "description":"Developed  Web Application System for Healthy of company"
+      },
+      {
+        "company":"Freelance",
+        "title":"Freelancer",
+        "years":"Jan 2020 - Present",
+        "description":"Developed production on require of customers"
+      }
+    ],
+    "skills":[
+      {
+        "name":"Git",
+        "level":"70%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"80%"
+      },
+      {
+        "name":"React Native",
+        "level":"90%"
+      },
+      {
+        "name":"Swift",
+        "level":"60%"
+      },
+      {
+        "name":"Mongo DB",
+        "level":"80%"
+      },
+      {
+        "name":"NodeJS",
+        "level":"90%"
+      },
+      {
+        "name":"Python",
+        "level":"70%"
+      },
+      {
+        "name":"Angular",
+        "level":"20%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"STDIO Trainning",
+        "category":"A fighting gear company I started",
+        "image":"stdio.png",
+        "url":"https://solutions.stdio.vn/"
+      },
+      {
+        "title":"Attendance Mobile Application",
+        "category":"Build Attendace Mobile Application for HCMUT with team",
+        "image":"bk.png",
+        "url":"http://www.hcmut.edu.vn/index.html"
+      },
+      {
+        "title":"Recording Location",
+        "category":"A react-native application for recording location - I was built",
+        "image":"record.png",
+        "url":"https://github.com/giavudangle/stalkLocation"
+      },
+      {
+        "title":"Facemask Detection with OpenCV",
+        "category":"An OpenCV Application for recognize have facemask an non",
+        "image":"facemask.png",
+        "url":"https://github.com/giavudangle/face_mask_detection_OpenCV"
+      },
+      {
+        "title":"Cool Image Detecton with VGG16",
+        "category":"Detect 18+ Image with VGG16",
+        "image":"18.png",
+        "url":"https://github.com/giavudangle/detection18-Images_VGG16"
+      },
+      {
+        "title":"Deep Learning Emotions Detection ",
+        "category":"Detect Person Emotions with Convolution Neurel Network",
+        "image":"teaser.png",
+        "url":"https://github.com/giavudangle/detection18-Images_VGG16"
+      }
+    ]
+  },
+  "testimonials":{
+    "testimonials":[
+      {
+        "text":"“Winners never quit, and quitters never win.”",
+        "user":"Vince Lombardi"
+      },
+      {
+        "text":"Stay Hungry Stay Foolish",
+        "user":"Steve Jobs"
+      }
+    ]
+  }
+}
+
