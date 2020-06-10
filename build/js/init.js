@@ -18,16 +18,20 @@
 /*----------------------------------------------------*/
 /* Smooth Scrolling
 ------------------------------------------------------ */
-
+    // Find class .smoothscroll khi click bắn callback
    $('.smoothscroll').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash,
+	    e.preventDefault();  // Không cho user direct
+      
+       // target là thẻ #id khi href sau đó bind lại.
+	    var target = this.hash, 
 	    $target = $(target);
 
+       // Check có animation nào đang hoạt động không thì ngắt
+       // Tạo mới 1 animaton 'scrollTop' : target là targe bind từ thẻ href
+       // Sau khi scroll thì bind lại target
 	    $('html, body').stop().animate({
 	        'scrollTop': $target.offset().top
-	    }, 800, 'swing', function () {
+	    }, 1000, 'swing', function () {
 	        window.location.hash = target;
 	    });
 	});
@@ -45,17 +49,20 @@
       handler: function(event, direction) {
 
 		   var active_section;
-
+         // Set cho active_section context hiện tại khi có way point
 			active_section = $(this);
-			if (direction === "up") active_section = active_section.prev();
+         if (direction === "up") active_section = active_section.prev(); 
+         // Xét direction đi lên thì set lại là previous của active 
 
 			var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
+         // Nếu không thì find active link query  = jquery
 
          navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
+         active_link.parent().addClass("current");
+         // Đảo class để set các màu cho nhau
 
 		},
-		offset: '35%'
+		offset: '50%'
 
 	});
 
@@ -79,8 +86,10 @@
 
    $(window).on('scroll', function() {
 
-		var h = $('header').height();
-		var y = $(window).scrollTop();
+		var h = $('header').height(); // Height windows 
+      var y = $(window).scrollTop(); // Get t position when user scroll
+      //this.console.log("h= " + h );
+      //this.console.log("y= " + y );
       var nav = $('#nav-wrap');
 
 	   if ( (y > h*.20) && (y < h) && ($(window).outerWidth() > 768 ) ) {
@@ -88,7 +97,9 @@
 	   }
       else {
          if (y < h*.20) {
-            nav.removeClass('opaque').fadeIn('fast');
+            nav.removeClass('opaque').fadeIn('fast'); 
+            // Ở section đầu sẽ không thấy do bị remove class này
+            // y max ở một section đầu  = height của windows (res screen)
          }
          else {
             nav.addClass('opaque').fadeIn('fast');
@@ -103,7 +114,6 @@
 ------------------------------------------------------*/
 
     $('.item-wrap a').magnificPopup({
-
        type:'inline',
        fixedContentPos: false,
        removalDelay: 200,
@@ -140,49 +150,10 @@
    $('form#contactForm button.submit').click(function() {
 
       $('#image-loader').fadeIn();
+      alert("This feature is coming soon...")
+      
+   
 
-      var contactName = $('#contactForm #contactName').val();
-      var contactEmail = $('#contactForm #contactEmail').val();
-      var contactSubject = $('#contactForm #contactSubject').val();
-      var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
-
-      $.ajax({
-
-	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
-
-            // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
-            }
-            // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
-            }
-
-	      }
-
-      });
-      return false;
    });
-
-
-});
-
-
-
-
-
-
-
-
+ });
